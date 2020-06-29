@@ -32,6 +32,7 @@
   left: 0;
   right: 0;
   background: rgba(29, 106, 154, 0.72);
+<!--  background: rgb(0,128,0);-->
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -309,8 +310,7 @@ footer {
                             <p class="card-text">{{i.description}}</p>
                             <a href="#" class="btn btn-primary" onclick="showModalWithImage('{{i.image}}', '{{i.title}}')">View</a>
 
-                            <a href="http://127.0.0.1:8000/media/images/{{i.title}}.jpg" download class="btn btn-primary"  style="float:right;">Download</a>
-
+                            <a href="{{i.image.url}}" download class="btn btn-primary"  style="float:right;" download>Download</a>
                               <br>
                           </div>
                       </div>
